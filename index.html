@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MovieHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav"><div class="wrap"><a class="logo" href="index.html">Movie<span>Hub</span></a></div></nav>
+    <main class="wrap">
+        <header class="hero">
+            <h1>Discover movies you'll <em>love</em></h1>
+            <p class="lede">Search any title to see ratings, cast, and the full story.</p>
+            <form id="movieForm" role="search">
+                <input id="movie-input" type="text" placeholder="Search for a movie..." aria-label="Movie title" autocomplete="off">
+                <button type="submit">Search</button>
+            </form>
+            <div class="tags" id="tags">
+                <button class="tag" type="button">Avengers</button><button class="tag" type="button">Batman</button>
+                <button class="tag" type="button">Inception</button><button class="tag" type="button">Harry Potter</button>
+                <button class="tag" type="button">Interstellar</button>
+            </div>
+        </header>
+        <h2 class="section-title" id="resultsTitle" hidden></h2>
+        <section id="movieHub" aria-live="polite"></section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
